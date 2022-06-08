@@ -1,0 +1,227 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    grid-template-rows: 50px 1fr 50px;
+    grid-template-areas:
+      "sidenav header"
+      "sidenav main"
+      "sidenav footer";
+    height: 100vh;
+  }
+  
+  /* Give every child element its grid name */
+  .header {
+    grid-area: header;
+    background-color: #648ca6;
+  }
+  .header__avatar img{
+      width: 50px;
+      height: auto;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 50%;
+
+  }
+  .header_dashboard{
+      font-size: 40px;
+  }
+  
+  .sidenav {
+    grid-area: sidenav;
+    background-color: #394263;
+  }
+  
+  .main {
+    grid-area: main;
+    background-color: #8fd4d9;
+  }
+  
+  .footer {
+    grid-area: footer;
+    background-color: #648ca6;
+  }
+
+
+
+  .header, .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    background-color: #648ca6;
+  }
+
+
+
+ 
+.sidenav ul{
+  list-style: none;
+  line-height: 30px;
+  padding: 20px;
+  color: #fff;
+}
+.sidenav button{
+  padding:10px 30px;
+  background: none;
+  width: 208px;
+  margin-right: 20px;
+  border: 2px solid #8fd4d9;
+  border-radius: 10px;
+}
+.sidenav button:hover{
+  background: #8fd4d9;
+}
+.sidenav ul li button{
+  color: #fff;
+}
+
+
+
+
+  .main-header {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 20px;
+    height: 150px; /* Force our height since we don't have actual content yet */
+    background-color: #e3e4e6;
+    color: slategray;
+  }
+
+
+
+  .main #image{
+    overflow: hidden;
+    display: none;
+  }
+.main table .edit a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 25px;
+  
+}
+a{
+  text-decoration: none;
+  color: #fff;
+}
+a:hover{
+  color: #fff;
+}
+.main table .edit{
+  border-radius: 5px;
+  padding: 2px;
+  background: green;
+  margin-right: 10px;
+}
+
+.main table .delete a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 25px; 
+}
+.main table .delete{
+  border-radius: 5px;
+  padding: 2px;
+  background: red;
+  margin-right: 10px;
+}
+table thead{
+  background: goldenrod;
+}
+
+
+.main form{
+  background: rgba(0, 0, 0, .5);
+  margin-top: 100px;
+  margin-left: 100px;
+  width: 60%;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+  border-radius: 20px;
+}
+@media(min-width:250px) and (max-width:320px){
+  .main form{
+    background: rgba(0, 0, 0, .5);
+    margin-top: 100px;
+    margin-left: 0px;
+    width: 100%;
+ 
+    padding: 20px;
+    border-radius: 20px;
+  }
+  .header_dashboard{
+    font-size: 11px;
+  }
+}
+@media(min-width:320px) and (max-width:400px){
+  .main form{
+    background: rgba(0, 0, 0, .5);
+    margin-top: 100px;
+    margin-left: 0px;
+    width: 100%;
+ 
+    padding: 20px;
+    border-radius: 20px;
+  }
+  .header_dashboard{
+    font-size: 15px;
+  }
+  .main label{
+    font-size: 20px;
+  }
+}
+
+
+
+.main label{
+  color: #fff;
+  font-size: 30px;
+
+
+
+}
+.main label:hover{
+  opacity: .8;
+}
+.main form input{
+  width: 80%;
+  padding: 7px;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  background: #fff;
+}
+.main form textarea{
+  width: 80%;
+  border: 1px solid #fff;
+  border-radius: 20px;
+}
+
+button{
+  padding: 10px 50px;
+  background-color: green;
+  border-radius: 30px;
+  border: none;
+  margin-top: 20px;
+}
+button a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+}
+button a:hover{
+  color: #fff;
+}
+
+
+ 
+ 
+
+
